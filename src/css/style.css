@@ -1,0 +1,23 @@
+header {
+  background: url("../img/background.png") no-repeat;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: rgba(0, 91, 193, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h2  {
+  font-size: 48px;
+}
+
+.logo {
+  width: 140px;
+  height: 58px;
+  left: 40px;
+  top: 11px;
+}
