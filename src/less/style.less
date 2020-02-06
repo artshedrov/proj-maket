@@ -1,0 +1,49 @@
+@white-text: #FFFF;
+
+
+body {
+  .main-text {
+    text-align: center;
+    h2 {
+
+    }
+    font-size: 48px;
+    color: @white-text;
+  }
+  header {
+    background: url("../img/background.png") no-repeat;
+    height: 800px;
+
+    nav {
+      background: rgba(0, 91, 193, 0.6);
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      a {
+        img {
+          padding-right: 15px;
+          vertical-align: middle;
+          width: 140px;
+          height: 58px;
+        }
+      }
+
+      menu {
+        list-style: none;
+        display: flex;
+
+        li {
+          padding-left: 15px;
+          padding-right: 30px;
+          align-items: center;
+          a {
+            color: @white-text;
+          }
+        }
+      }
+    }
+  }
+}
+
