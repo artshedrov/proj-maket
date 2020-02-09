@@ -25,30 +25,138 @@
     <a class="main-button" href="#">Перейти</a>
   </div>
 </header>
-<section class="projects">
-  <div>
-    <img src="img/decor-heading.png" alt="">
-    <h2 class="main-header">Наши проекты</h2>
-  </div>
-  <div class="slider">
-    <div>
-      <img src="img/slide1.png" alt="">
+
+<section class="project">
+  <div class="project-content">
+    <div class="project-header">
+
+      <div class="project-title">
+        <img src="img/decor-heading.png" alt="">
+        <h2 class="main-header">Наши проекты</h2>
+      </div>
+      <div class="project-slider-navigation">
+        <label for="r1" class="projects-slider-bar">BTN1</label>
+        <label for="r2" class="projects-slider-bar">BTN2</label>
+      </div>
     </div>
-    <div>
-      <img src="img/slide2.png" alt="">
+
+    <div class="project-slider">
+      <div class="project-slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+
+        <div class="project-slide s1">
+          <div>
+            <img class="scr" src="img/slide1.png" alt="">
+            <div class="text">
+              ddd
+            </div>
+          </div>
+          <div>
+            <img src="img/slide2.png" alt="">
+          </div>
+        </div>
+        <div class="project-slide">
+          <div>
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div>
+            <img src="img/slide2.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section class="catalog">
-  <div>
-    <img src="img/decor-heading.png" alt="">
-    <h2 class="main-header">Каталог продукции</h2>
+
+<section class="catalog2">
+  <div class="catalog2-content">
+    <div class="catalog2-header">
+
+      <div class="catalog2-title">
+        <img src="img/decor-heading.png" alt="">
+        <h2 class="main-header">Каталог продукции</h2>
+      </div>
+    </div>
+
+    <div class="catalog2-slider-navigation">
+      <label for="c1" class="catalog2-slider-bar">Robe</label>
+      <label for="c2" class="catalog2-slider-bar">Compulite</label>
+    </div>
+
+    <div class="catalog2-slider">
+      <div class="catalog2-slides">
+        <input type="radio" name="catalog" id="c1" checked>
+        <input type="radio" name="catalog" id="c2">
+
+        <div class="catalog2-slide cat1">
+          <div>
+            <img src="img/slide_catalog1.png" alt="">
+          </div>
+          <div>
+            <img src="img/slide_catalog2.png" alt="">
+          </div>
+          <div>
+            <img src="img/slide_catalog3.png" alt="">
+          </div>
+        </div>
+        <div class="catalog2-slide">
+          <div>
+            <img src="img/slide_catalog1.png" alt="">
+          </div>
+          <div>
+            <img src="img/slide_catalog2.png" alt="">
+          </div>
+          <div>
+            <img src="img/slide_catalog3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
 <section class="arenda">
-  <div>
-    <img src="img/decor-heading.png" alt="">
-    <h2 class="main-header">Аренда оборудования</h2>
+  <div class="arenda-content">
+    <div class="arenda-header">
+      <div class="arenda-title">
+        <img src="img/decor-heading.png" alt="">
+        <h2 class="main-header">Аренда оборудования</h2>
+      </div>
+    </div>
+
+    <div class="arenda-content">
+      <p>
+        Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
+      </p>
+
+      <div class="arenda-card-slider">
+
+        <div class="arenda-slider-header">
+          <div class="arenda-slider-title">
+            <h2 class="">Новое оборудование, предоставляемое в аренду:</h2>
+          </div>
+          <div class="slider-btn">
+            <a href="#slide-1">&lt;</a>
+            <a href="#slide-2">&gt;</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="slides">
+            <div class="slide" id="slide-1">
+              <img src="img/slide_catalog3.png" alt="">
+            </div>
+
+            <div class="slide" id="slide-2">
+              <img src="img/slide_catalog3.png" alt="">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 <section class="news">
