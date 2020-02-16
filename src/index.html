@@ -4,72 +4,85 @@
   <meta charset="UTF-8">
   <title>Trans Light</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-  <nav>
-    <a href="">
-      <img src="img/logo.png" alt="" class="logo">
-    </a>
-    <ul>
-      <li><a href="#">О компании</a></li>
-      <li><a href="#">Портфолио</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Сервис</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </nav>
-  <div class="showcase-wrapper">
-
+  <div class="header">
+    <div class="header-logo">
+      <a href="">
+        <img src="img/logo.png" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Сервис</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="showcase">
+      <h2>Светотехническое оборудование в Петербурге</h2>
+      <p>Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
+      <a class="main-button" href="#">Перейти</a>
+    </div>
     <div class="blue-block">
-      <div class="showcase">
-        <h2>Светотехническое оборудование в Петербурге</h2>
-        <p>Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
-        <a class="main-button" href="#">Перейти</a>
-      </div>
     </div>
   </div>
 </header>
 
 <section class="project">
-  <div class="project-content">
-    <div class="project-header">
+  <div class="container">
+    <div class="project-content">
+      <div class="project-header">
 
-      <div class="project-title">
-        <img src="img/decor-heading.png" alt="">
-        <h2 class="main-header">Наши проекты</h2>
-      </div>
-      <div class="project-slider-navigation">
-        <label for="r1" class="projects-slider-bar">BTN1</label>
-        <label for="r2" class="projects-slider-bar">BTN2</label>
-      </div>
-    </div>
-
-    <div class="project-slider">
-      <div class="project-slides">
-        <input type="radio" name="r" id="r1" checked>
-        <input type="radio" name="r" id="r2">
-
-        <div class="project-slide s1">
-          <div class="project-slide1">
-            <div class="slide-text">
-              <h2>ССК "ОЛИМП"</h2>
-              <p>Световое оформление форума “Шубы-2019”</p>
-            </div>
-          </div>
-          <div class="project-slide2">
-            <div class="slide-text">
-              <h2>ССК "ОЛИМП"</h2>
-              <p>Световое оформление форума “Шубы-2019”</p>
-            </div>
-          </div>
+        <div class="project-title">
+          <img src="img/decor-heading.png" alt="">
+          <h2 class="main-header">Наши проекты</h2>
         </div>
-        <div class="project-slide">
-          <div>
-            <img src="img/slide1.png" alt="">
+        <div class="project-slider-navigation">
+          <label for="r1" class="projects-slider-bar">&lt;</label>
+          <label for="r2" class="projects-slider-bar">&gt;</label>
+        </div>
+      </div>
+
+      <div class="project-slider">
+        <div class="project-slides">
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+
+          <div class="project-slide s1">
+            <div class="project-slide-content slide1">
+              <div class="slide-text">
+                <h2>ССК "ОЛИМП"</h2>
+                <p>Световое оформление форума “Шубы-2019”</p>
+              </div>
+            </div>
+            <div class="project-slide-content slide2">
+              <div class="slide-text">
+                <h2>ССК "ОЛИМП"</h2>
+                <p>Световое оформление форума “Шубы-2019”</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="img/slide2.png" alt="">
+          <div class="project-slide">
+            <div class="project-slide-content slide1">
+              <div class="slide-text">
+                <h2>ССК "ОЛИМП"</h2>
+                <p>Световое оформление форума “Шубы-2019”</p>
+              </div>
+            </div>
+            <div class="project-slide-content slide2">
+              <div class="slide-text">
+                <h2>ССК "ОЛИМП"</h2>
+                <p>Световое оформление форума “Шубы-2019”</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -78,45 +91,47 @@
 </section>
 
 <section class="catalog2">
-  <div class="catalog2-content">
-    <div class="catalog2-header">
+  <div class="container">
+    <div class="catalog2-content">
+      <div class="catalog2-header">
 
-      <div class="catalog2-title">
-        <img src="img/decor-heading.png" alt="">
-        <h2 class="main-header">Каталог продукции</h2>
-      </div>
-    </div>
-
-    <div class="catalog2-slider-navigation">
-      <label for="c1" class="catalog2-slider-bar">Robe</label>
-      <label for="c2" class="catalog2-slider-bar">Compulite</label>
-    </div>
-
-    <div class="catalog2-slider">
-      <div class="catalog2-slides">
-        <input type="radio" name="catalog" id="c1" checked>
-        <input type="radio" name="catalog" id="c2">
-
-        <div class="catalog2-slide cat1">
-          <div>
-            <img src="img/slide_catalog1.png" alt="">
-          </div>
-          <div>
-            <img src="img/slide_catalog2.png" alt="">
-          </div>
-          <div>
-            <img src="img/slide_catalog3.png" alt="">
-          </div>
+        <div class="catalog2-title">
+          <img src="img/decor-heading.png" alt="">
+          <h2 class="main-header">Каталог продукции</h2>
         </div>
-        <div class="catalog2-slide">
-          <div>
-            <img src="img/slide_catalog1.png" alt="">
+      </div>
+
+      <div class="catalog2-slider-navigation">
+        <label for="c1" class="catalog2-slider-bar">Robe</label>
+        <label for="c2" class="catalog2-slider-bar">Compulite</label>
+      </div>
+
+      <div class="catalog2-slider">
+        <div class="catalog2-slides">
+          <input type="radio" name="catalog" id="c1" checked>
+          <input type="radio" name="catalog" id="c2">
+
+          <div class="catalog2-slide cat1">
+            <div>
+              <img src="img/slide_catalog1.png" alt="">
+            </div>
+            <div>
+              <img src="img/slide_catalog2.png" alt="">
+            </div>
+            <div>
+              <img src="img/slide_catalog3.png" alt="">
+            </div>
           </div>
-          <div>
-            <img src="img/slide_catalog2.png" alt="">
-          </div>
-          <div>
-            <img src="img/slide_catalog3.png" alt="">
+          <div class="catalog2-slide">
+            <div>
+              <img src="img/slide_catalog1.png" alt="">
+            </div>
+            <div>
+              <img src="img/slide_catalog2.png" alt="">
+            </div>
+            <div>
+              <img src="img/slide_catalog3.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -174,7 +189,27 @@
   </div>
 </section>
 <footer>
-  <h2>Тут подвал</h2>
+  <div class="contacts">
+    <div class="container">
+      <div class="row">
+        ddddddddddd
+      </div>
+    </div>
+  </div>
+  <div class="menu-footer">
+    <div class="container">
+      <div class="row">
+        dddddddd
+      </div>
+    </div>
+  </div>
+  <div class="menu-footer">
+    <div class="container">
+      <div class="row">
+        ddddddddd
+      </div>
+    </div>
+  </div>
 </footer>
 </body>
 
