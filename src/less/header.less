@@ -1,62 +1,20 @@
 .header {
-  background: url("../img/background.png") no-repeat;
+  margin: auto;
+  position: relative;
   width: 100%;
   height: 800px;
-  margin: auto;
-}
-
-.header__content {
-  // background: @alfa-blue;
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  &__logo {
-    flex: 2;
-    margin: 0 0 0 40px;
+  &__banner {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
   }
-  &__nav {
-    flex: 3 100px;
-    margin: 0 40px 0 0;
-    &__menu {
-      list-style: none;
-      display: flex;
-      &__item {
-        padding-left: 15px;
-        padding-right: 30px;
-        align-items: center;
-        a {
-          // color: @white-text;
-
-          font-size: 14px;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: bold;
-          text-decoration: none;
-          &:hover {
-            opacity: 0.7;
-          } 
-        }
-      }
-    }
+  &__content {
+    background: @alfa-blue;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
-
-.nav {
-  
-}
-
-// .header {
-//   background: @alfa-blue;
-//   height: 80px;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-// }
-
-
-//   img {
-//     padding-right: 15px;
-//     vertical-align: middle;
-//     width: 140px;
-//     height: 58px;
-//   }

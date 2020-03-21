@@ -1,44 +1,68 @@
+
+.logo {
+  flex: 2;
+  margin: 0 0 0 40px;
+}
+.logo__image {
+  padding-right: 15px;
+  vertical-align: middle;
+  width: 140px;
+  height: 58px;
+}
+
 .header {
-  background: url("../img/background.png") no-repeat;
+  margin: auto;
+  position: relative;
   width: 100%;
   height: 800px;
+}
+.header__banner {
   margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  z-index: -1;
 }
 .header__content {
+  background: rgba(0, 91, 193, 0.6);
   height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.header__content__logo {
+.logo {
   flex: 2;
   margin: 0 0 0 40px;
 }
-.header__content__nav {
+.logo__image {
+  padding-right: 15px;
+  vertical-align: middle;
+  width: 140px;
+  height: 58px;
+}
+.nav {
   flex: 3 100px;
   margin: 0 40px 0 0;
 }
-.header__content__nav__menu {
+.nav__menu {
   list-style: none;
   display: flex;
 }
-.header__content__nav__menu__item {
+.nav__menu__item {
   padding-left: 15px;
   padding-right: 30px;
   align-items: center;
 }
-.header__content__nav__menu__item a {
+.nav__menu__item a {
+  color: #FFFF;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
-.header__content__nav__menu__item a:hover {
+.nav__menu__item a:hover {
   opacity: 0.7;
 }
-
-
-
 @media screen and (max-device-width: 1100px) {
   .news-item {
     margin: 0;
@@ -78,6 +102,8 @@ body .blue-block {
 body .showcase {
   text-align: left;
   color: #FFFF;
+  position: relative;
+  z-index: 1;
 }
 body .showcase h2 {
   line-height: 71px;

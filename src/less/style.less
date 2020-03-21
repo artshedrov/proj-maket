@@ -1,14 +1,8 @@
-@white-text: #FFFF;
-@border-color: #FFFFFF;
-@alfa-blue: rgba(0, 91, 193, 0.6);
-@gray-color: #E5E5E5;
-@primary-blue: #005BC1;
-@black-text: #000;
-@second-text-color: #343434;
+@import '_variables.less';
 
-@import: url('../less/header.less');
-@import: url('../less/logo.less');
-@import: url('../less/navbar.less');
+@import 'header.less';
+@import 'logo.less';
+@import 'navbar.less';
 
 @media screen and (max-device-width: 1100px) {
   .news-item { margin: 0;}
@@ -85,6 +79,8 @@ body {
     // flex-wrap: nowrap;
     text-align: left;
     color: @white-text;
+    position: relative;
+    z-index: 1;
 
     h2 {
       line-height: 71px;
