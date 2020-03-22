@@ -1,4 +1,5 @@
 
+
 .logo {
   flex: 2;
   margin: 0 0 0 40px;
@@ -10,8 +11,27 @@
   height: 58px;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev {
+  position: relative !important;
+}
+.swiper-button-next {
+  position: relative !important;
+}
+
 .header {
-  margin: auto;
   position: relative;
   width: 100%;
   height: 800px;
@@ -100,10 +120,24 @@
 .active[data-tab-content] {
   display: block;
 }
-@media screen and (max-device-width: 1100px) {
-  .news-item {
-    margin: 0;
-  }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev {
+  position: relative !important;
+}
+.swiper-button-next {
+  position: relative !important;
 }
 body {
   margin: 0;
