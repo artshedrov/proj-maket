@@ -63,6 +63,43 @@
 .nav__menu__item a:hover {
   opacity: 0.7;
 }
+/* Style the tab */
+/* Style the tab content */
+.tab {
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+.tab__navigation {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+.tab__btn {
+  background: none;
+}
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
+}
 @media screen and (max-device-width: 1100px) {
   .news-item {
     margin: 0;
@@ -640,4 +677,34 @@ body .footer-about p {
   color: #FFFF;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
+}
+
+/* Style the tab */
+/* Style the tab content */
+.tab {
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+.tab__navigation {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+.tab__btn {
+  background: none;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
 }

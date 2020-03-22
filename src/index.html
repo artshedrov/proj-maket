@@ -96,60 +96,28 @@
 <section class="catalog2">
   <div class="container">
     <div class="catalog2-content">
+      
       <div class="catalog2-header">
-
         <div class="catalog2-title">
           <img src="img/decor-heading.png" alt="">
           <h2 class="main-header">Каталог продукции</h2>
         </div>
       </div>
 
-      <div class="catalog2-slider-navigation">
-        <label for="c1" class="catalog2-slider-bar" id="btn1">Robe</label>
-        <label for="c2" class="catalog2-slider-bar">Compulite</label>
+      <div class="tab__navigation">
+        <button class="tab__btn" data-tab-target="#robe">Robe</button>
+        <button class="tab__btn" data-tab-target="#compulite">Compulite</button>
       </div>
 
-      <div class="catalog2-slider">
-        <div class="catalog2-slides">
-          <input type="radio" name="catalog" id="c1" checked>
-          <input type="radio" name="catalog" id="c2">
-
-          <div class="catalog2-slide cat1">
-              <div class="catalog-slide-content catalog-slide1">
-                <div class="catalog-slide-text">
-                  <h2>Статичные светодиодные приборы</h2>
-                </div>
-              </div>
-            <div class="catalog-slide-content catalog-slide2">
-              <div class="catalog-slide-text">
-                <h2>Контроллеры</h2>
-              </div>
-            </div>
-            <div class="catalog-slide-content catalog-slide3">
-              <div class="catalog-slide-text">
-                <h2>Аксессуары</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="catalog2-slide">
-            <div class="catalog-slide-content catalog-slide1">
-              <div class="catalog-slide-text">
-                <h2>Статичные светодиодные приборы</h2>
-              </div>
-            </div>
-            <div class="catalog-slide-content catalog-slide2">
-              <div class="catalog-slide-text">
-                <h2>Контроллеры</h2>
-              </div>
-            </div>
-            <div class="catalog-slide-content catalog-slide3">
-              <div class="catalog-slide-text">
-                <h2>Аксессуары</h2>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="robe" data-tab-content class="tab active">
+        <img src="img/slide_catalog1.png" alt="">
+        <img src="img/slide_catalog2.png" alt="">
+        <img src="img/slide_catalog3.png" alt="">
+      </div>
+      
+      <div id="compulite" data-tab-content class="tab">
+        <img src="img/slide_catalog1.png" alt="">
+        <img src="img/slide_catalog3.png" alt="">
       </div>
     </div>
   </div>
@@ -301,5 +269,6 @@
   </div>
 </footer>
 </body>
+<script src="js/tabs.js"></script>
 
 </html>
