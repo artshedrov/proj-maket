@@ -17,74 +17,72 @@
     <div class="header__content">
       <div class="logo">
         <a href="/">
-          <img class="logo__image" src="img/logo.png" alt="">
+          <img   src="img/logo.png" alt="">
         </a>
       </div>
       <nav class="nav">
         <ul class="nav__menu">
-          <li class="nav__menu__item"><a href="#">О компании</a></li>
-          <li class="nav__menu__item"><a href="#">Портфолио</a></li>
-          <li class="nav__menu__item"><a href="#">Каталог</a></li>
-          <li class="nav__menu__item"><a href="#">Сервис</a></li>
-          <li class="nav__menu__item"><a href="#">Контакты</a></li>
+          <li class="nav__item"><a href="#">О компании</a></li>
+          <li class="nav__item"><a href="#">Портфолио</a></li>
+          <li class="nav__item"><a href="#">Каталог</a></li>
+          <li class="nav__item"><a href="#">Сервис</a></li>
+          <li class="nav__item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
-    <div class="container">
+    <div class="wrapper-main">
       <div class="showcase">
-        <h2>Светотехническое оборудование в Петербурге</h2>
-        <p>Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
-        <a class="main-button" href="#">Перейти</a>
+        <h2 class="showcase__title">Светотехническое оборудование в Петербурге</h2>
+        <p class="showcase__text">Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
+        <a class="showcase__btn main-button" href="#">Перейти</a>
       </div>
-      <div class="blue-block">
+      <div class="showcase__color-block">
       </div>
     </div>
   </header>
 
-  <section class="project">
-    <div class="container">
-      <div class="project-content">
-        <div class="project-header">
+  <section class="section-container">
+    <div class="wrapper-main">
+      <div class="section-header section-header__layout">
 
-          <div class="project-title">
-            <img src="img/decor-heading.png" alt="">
-            <h2 class="main-header">Наши проекты</h2>
-          </div>
-          <div class="project-slider-navigation">
-            
-            <div class="project__slider__btn--prev slider-bar"></div>
-            <div class="project__slider__btn--next slider-bar"></div>
-          </div>
+        <div class="section-header__title">
+          <img src="img/decor-heading.png" alt="">
+          <h2>Наши проекты</h2>
+        </div>
+        <div class="project-slider-navigation">
+          <div class="project__slider__btn--prev slider-bar">&lt;</div>
+          <div class="project__slider__btn--next slider-bar">&gt;</div>
         </div>
 
-        <div class="project__slider swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/slide1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/slide2.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/slide1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/slide2.png" alt="">
-            </div>
+      </div>
+
+      <div class="project__slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide2.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="catalog2">
-    <div class="container">
+  <section class="section-container">
+    <div class="wrapper-main">
       <div class="catalog2-content">
         
-        <div class="catalog2-header">
-          <div class="catalog2-title">
+        <div class="section-header">
+          <div class="section-header__title">
             <img src="img/decor-heading.png" alt="">
-            <h2 class="main-header">Каталог продукции</h2>
+            <h2>Каталог продукции</h2>
           </div>
         </div>
 
@@ -107,13 +105,13 @@
     </div>
   </section>
 
-  <section class="arenda">
-    <div class="container">
+  <section class="section-container">
+    <div class="wrapper-main">
       <div class="arenda-content">
-        <div class="arenda-header">
-          <div class="arenda-title">
+        <div class="section-header">
+          <div class="section-header__title">
             <img src="img/decor-heading.png" alt="">
-            <h2 class="main-header">Аренда оборудования</h2>
+            <h2>Аренда оборудования</h2>
           </div>
         </div>
 
@@ -160,13 +158,13 @@
     </div>
   </section>
 
-  <section class="news">
-    <div class="container">
+  <section class="section-container">
+    <div class="wrapper-main">
       <div class="news-content">
-        <div class="news-header">
-          <div class="news-title">
+        <div class="section-header section-header__layout">
+          <div class="section-header__title">
             <img src="img/decor-heading.png" alt="">
-            <h2 class="main-header">Новости</h2>
+            <h2>Новости</h2>
           </div>
           <div class="">
             <button class="news-btn">Все новости</button>

@@ -34,28 +34,28 @@
   //   border-top: none;
   // }
 
-  .tab {
-    animation: fadeEffect 1s;
-    &__navigation {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0 0 50px 0;
-    }
-    &__btn {
-      background: none;
-    }
+.tab {
+  animation: fadeEffect 1s;
+  &__navigation {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 50px 0;
   }
+  &__btn {
+    background: none;
+  }
+}
 
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
-  [data-tab-content] {
-    display: none;
-  }
+[data-tab-content] {
+  display: none;
+}
 
-  .active[data-tab-content] {
-    display: block;
-  }
+.active[data-tab-content] {
+  display: block;
+}

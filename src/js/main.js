@@ -1,10 +1,6 @@
 let projectSlider = new Swiper('.project__slider', {
     slidesPerView: 2,
     spaceBetween: 10,
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   clickable: true,
-    // },
     navigation: {
         nextEl: '.project__slider__btn--next',
         prevEl: '.project__slider__btn--prev'
