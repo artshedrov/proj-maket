@@ -162,8 +162,6 @@
 .nav__item a:hover {
   opacity: 0.7;
 }
-/* Style the tab */
-/* Style the tab content */
 .tab {
   -webkit-animation: fadeEffect 1s;
           animation: fadeEffect 1s;
@@ -176,6 +174,22 @@
 }
 .tab__btn {
   background: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+  border: none;
+  margin: 0 23px 0 23px;
+  outline: none;
+}
+.tab__btn--active {
+  background-color: white;
+  color: #005BC1;
+  box-shadow: 0 8px 1px -5px #005BC1;
+}
+.tab__btn:hover {
+  opacity: 0.6;
 }
 @-webkit-keyframes fadeEffect {
   from {
@@ -693,34 +707,4 @@ body .footer-about p {
   color: #FFFF;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-}
-
-/* Style the tab */
-/* Style the tab content */
-.tab {
-  -webkit-animation: fadeEffect 1s;
-          animation: fadeEffect 1s;
-}
-.tab__navigation {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 0 50px 0;
-}
-.tab__btn {
-  background: none;
-}
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-[data-tab-content] {
-  display: none;
-}
-.active[data-tab-content] {
-  display: block;
 }

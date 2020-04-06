@@ -8,9 +8,9 @@ tabs.forEach(tab => {
       tabContent.classList.remove('active');
     })
     tabs.forEach(tab => {
-      tab.classList.remove('active');
+      tab.classList.remove('tab__btn--active');
     })
-    tab.classList.add('active');
+    tab.classList.add('tab__btn--active');
     target.classList.add('active');  
   });
 });
