@@ -12,7 +12,7 @@
 }
 
 .section-container {
-  margin: 50px 0 50px 0;
+  margin: 136px 0 136px 0;
 }
 .section-container h2 {
   font-size: 30px;
@@ -20,6 +20,7 @@
 }
 .section-header {
   display: flex;
+  align-items: center;
 }
 .section-header__title {
   text-transform: uppercase;
@@ -32,26 +33,6 @@
 .section-header__layout {
   align-items: center;
   justify-content: space-between;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-button-prev {
-  position: relative !important;
-}
-.swiper-button-next {
-  position: relative !important;
 }
 
 .header {
@@ -103,12 +84,12 @@
 .showcase__color-block {
   background: rgba(0, 91, 193, 0.6);
   position: absolute;
-  width: 500px;
+  width: 444px;
   height: 720px;
   top: 80px;
 }
 .section-container {
-  margin: 50px 0 50px 0;
+  margin: 136px 0 136px 0;
 }
 .section-container h2 {
   font-size: 30px;
@@ -116,6 +97,7 @@
 }
 .section-header {
   display: flex;
+  align-items: center;
 }
 .section-header__title {
   text-transform: uppercase;
@@ -217,20 +199,20 @@
   width: 100%;
   height: 100%;
 }
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .swiper-button-prev {
   position: relative !important;
 }
 .swiper-button-next {
   position: relative !important;
+}
+.arenda-slider__container {
+  border: 3px solid #005BC1;
+}
+.arenda-slider__wrapper {
+  width: 600px;
+}
+.arenda-slider__slide {
+  display: flex;
 }
 .wrapper-main {
   max-width: 1110px;
@@ -504,34 +486,6 @@ body .arenda-l-block-header .arenda-slider-navigation {
 }
 body .arenda-l-block-header .arenda-slider-navigation label {
   margin: 0;
-}
-body .arenda-slider {
-  width: 550px;
-  height: auto;
-  overflow: hidden;
-}
-body .arenda-slides {
-  width: 500%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-body .arenda-slides input[name="arenda"] {
-  position: absolute;
-  visibility: hidden;
-}
-body .arenda-slides #a1:checked ~ .s1 {
-  margin-left: 0;
-}
-body .arenda-slides #a2:checked ~ .s1 {
-  margin-left: -20%;
-}
-body .arenda-slide {
-  width: 20%;
-  transition: 0.6s;
-  display: flex;
-  flex-direction: row;
-  overflow-x: hidden;
 }
 body .arenda-slide-content {
   display: flex;

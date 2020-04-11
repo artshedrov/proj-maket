@@ -9,9 +9,9 @@ let projectSlider = new Swiper('.project__slider', {
 
   let arendaSlider = new Swiper ('.arenda__slider', {
       slidesPerView: 1,
-      spaceBetween: 60,
+      spaceBetween: 10,
       navigation: {
-          nextEl: '.arenda__slider__btn--next',
-          prevEl: '.arenda__slider__btn--prev'
+          nextEl: '.arenda-slider__btn--next',
+          prevEl: '.arenda-slider__btn--prev'
       }
   })
