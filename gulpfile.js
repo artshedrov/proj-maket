@@ -69,7 +69,7 @@ gulp.task('watcher', function () {
     return merge(lessStream)
       .pipe(concat('style.css'))
       .pipe(postcss([autoprefixer]))
-      .pipe(minify())
+      // .pipe(minify())
       .pipe(gulp.dest('src/css'))
       .pipe(browser.reload({stream: true}));
   });

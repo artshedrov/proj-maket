@@ -1,302 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Trans Light</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="header">
-    <div class="header-logo">
-      <a href="">
-        <img src="img/logo.png" alt="">
-      </a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Trans Light</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <header class="header">
+    <div class="header__banner">
+      <img src="img/background.png" alt="">
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Портфолио</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Сервис</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="container">
-    <div class="showcase">
-      <h2>Светотехническое оборудование в Петербурге</h2>
-      <p>Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
-      <a class="main-button" href="#">Перейти</a>
+    <div class="header__content">
+      <div class="logo">
+        <a href="/">
+          <img   src="img/logo.png" alt="">
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="#">О компании</a></li>
+          <li class="nav__item"><a href="#">Портфолио</a></li>
+          <li class="nav__item"><a href="#">Каталог</a></li>
+          <li class="nav__item"><a href="#">Сервис</a></li>
+          <li class="nav__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="blue-block">
+    <div class="wrapper-main">
+      <div class="showcase-container">
+        <div class="showcase">
+          <h2 class="showcase__title">Светотехническое оборудование в Петербурге</h2>
+          <p class="showcase__text">Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
+          <a class="showcase__btn main-button" href="#">Перейти</a>
+        </div>
+      </div>
+      <div class="showcase__color-block"></div>
     </div>
-  </div>
-</header>
+  </header>
 
-<section class="project">
-  <div class="container">
-    <div class="project-content">
-      <div class="project-header">
+  <section class="section-container">
+    <div class="wrapper-main">
+      <div class="section-header section-header__layout">
 
-        <div class="project-title">
+        <div class="section-header__title">
           <img src="img/decor-heading.png" alt="">
-          <h2 class="main-header">Наши проекты</h2>
+          <h2>Наши проекты</h2>
         </div>
         <div class="project-slider-navigation">
-          <label for="r1" class="slider-bar">&lt;</label>
-          <label for="r2" class="slider-bar">&gt;</label>
+          <div class="project__slider__btn--prev slider-bar">&lt;</div>
+          <div class="project__slider__btn--next slider-bar">&gt;</div>
         </div>
+
       </div>
 
-      <div class="project-slider">
-        <div class="project-slides">
-          <input type="radio" name="r" id="r1" checked>
-          <input type="radio" name="r" id="r2">
-
-          <div class="project-slide s1">
-            <div class="project-slide-content slide1">
-              <div class="slide-text">
-                <h2>ССК "ОЛИМП"</h2>
-                <p>Световое оформление форума “Шубы-2019”</p>
-              </div>
-            </div>
-            <div class="project-slide-content slide2">
-              <div class="slide-text">
-                <h2>ССК "ОЛИМП"</h2>
-                <p>Световое оформление форума “Шубы-2019”</p>
-              </div>
-            </div>
+      <div class="project__slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slide1.png" alt="">
           </div>
-          <div class="project-slide">
-            <div class="project-slide-content slide1">
-              <div class="slide-text">
-                <h2>ССК "ОЛИМП"</h2>
-                <p>Световое оформление форума “Шубы-2019”</p>
-              </div>
-            </div>
-            <div class="project-slide-content slide2">
-              <div class="slide-text">
-                <h2>ССК "ОЛИМП"</h2>
-                <p>Световое оформление форума “Шубы-2019”</p>
-              </div>
-            </div>
+          <div class="swiper-slide">
+            <img src="img/slide2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slide2.png" alt="">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="catalog2">
-  <div class="container">
-    <div class="catalog2-content">
-      <div class="catalog2-header">
-
-        <div class="catalog2-title">
-          <img src="img/decor-heading.png" alt="">
-          <h2 class="main-header">Каталог продукции</h2>
+  <section class="section-container">
+    <div class="wrapper-main">
+      <div class="catalog2-content">
+        
+        <div class="section-header">
+          <div class="section-header__title">
+            <img src="img/decor-heading.png" alt="">
+            <h2>Каталог продукции</h2>
+          </div>
         </div>
-      </div>
 
-      <div class="catalog2-slider-navigation">
-        <label for="c1" class="catalog2-slider-bar" id="btn1">Robe</label>
-        <label for="c2" class="catalog2-slider-bar">Compulite</label>
-      </div>
+        <div class="tab__navigation">
+          <button class="tab__btn tab__btn--active" data-tab-target="#robe">Robe</button>
+          <button class="tab__btn" data-tab-target="#compulite">Compulite</button>
+        </div>
 
-      <div class="catalog2-slider">
-        <div class="catalog2-slides">
-          <input type="radio" name="catalog" id="c1" checked>
-          <input type="radio" name="catalog" id="c2">
-
-          <div class="catalog2-slide cat1">
-              <div class="catalog-slide-content catalog-slide1">
-                <div class="catalog-slide-text">
-                  <h2>Статичные светодиодные приборы</h2>
-                </div>
-              </div>
-            <div class="catalog-slide-content catalog-slide2">
-              <div class="catalog-slide-text">
-                <h2>Контроллеры</h2>
-              </div>
-            </div>
-            <div class="catalog-slide-content catalog-slide3">
-              <div class="catalog-slide-text">
-                <h2>Аксессуары</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="catalog2-slide">
-            <div class="catalog-slide-content catalog-slide1">
-              <div class="catalog-slide-text">
-                <h2>Статичные светодиодные приборы</h2>
-              </div>
-            </div>
-            <div class="catalog-slide-content catalog-slide2">
-              <div class="catalog-slide-text">
-                <h2>Контроллеры</h2>
-              </div>
-            </div>
-            <div class="catalog-slide-content catalog-slide3">
-              <div class="catalog-slide-text">
-                <h2>Аксессуары</h2>
-              </div>
-            </div>
-          </div>
+        <div id="robe" data-tab-content class="tab active">
+          <img src="img/slide_catalog1.png" alt="">
+          <img src="img/slide_catalog2.png" alt="">
+          <img src="img/slide_catalog3.png" alt="">
+        </div>
+        
+        <div id="compulite" data-tab-content class="tab">
+          <img src="img/slide_catalog1.png" alt="">
+          <img src="img/slide_catalog3.png" alt="">
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="arenda">
-  <div class="container">
-    <div class="arenda-content">
-      <div class="arenda-header">
-        <div class="arenda-title">
-          <img src="img/decor-heading.png" alt="">
-          <h2 class="main-header">Аренда оборудования</h2>
-        </div>
-      </div>
-
-      <div class="arenda-main-block">
-        <p>
-          Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
-        </p>
-        <div class="arenda-l-block">
-          <div class="arenda-l-block-header">
-            <div class="arenda-l-block-title">
-              <h3>Новое оборудование, предоставляемое в аренду:</h3>
-            </div>
-            <div class="arenda-slider-navigation">
-              <label for="a1" class="slider-bar">&lt;</label>
-              <label for="a2" class="slider-bar">&gt;</label>
-            </div>
+  <section class="section-container">
+    <div class="wrapper-main">
+      <div class="arenda-content">
+        <div class="section-header">
+          <div class="section-header__title">
+            <img src="img/decor-heading.png" alt="">
+            <h2>Аренда оборудования</h2>
           </div>
+        </div>
 
-          <div class="arenda-slider">
-            <div class="arenda-slides">
-              <input type="radio" name="arenda" id="a1" checked>
-              <input type="radio" name="arenda" id="a2">
-
-              <div class="arenda-slide s1">
-                <div class="arenda-slide-content">
-                  <img src="img/arenda-slide.png" alt="">
-                  <div class="slide-text">
-                    <h4>Robe Robin ParFect 100</h4>
-                    <ul>
-                      <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
-                      <li>Угол раскрытия 7</li>
-                      <li>В комплекте рассеивающая линза 40°</li>
-                      <li>Потребляемая мощность 200 Вт</li>
-                    </ul>
+        <div class="arenda-main-block">
+          <p>
+            Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
+          </p>
+          <div class="arenda-slider__container">
+            <div class="section-header">
+              <h2>Новое оборудование, предоставляемое в аренду:</h2>
+              <div class="project-slider-navigation">
+                <div class="arenda-slider__btn--prev slider-bar">&lt;</div>
+                <div class="arenda-slider__btn--next slider-bar">&gt;</div>
+              </div>
+            </div>
+  
+            <div class="swiper-container">
+              <div class="arenda__slider arenda-slider__wrapper">
+                <div class="swiper-wrapper">
+                  <div class="arenda-slider__slide swiper-slide">
+                    <img src="img/arenda-slide1.png" alt="">
+                    <div class="slide-text">
+                      <h4>Robe Robin ParFect 100</h4>
+                      <ul>
+                        <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+                        <li>Угол раскрытия 7</li>
+                        <li>В комплекте рассеивающая линза 40°</li>
+                        <li>Потребляемая мощность 200 Вт</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="arenda-slide">
-                <div class="arenda-slide-content">
-                  <img src="img/arenda-slide.png" alt="">
-                  <div class="slide-text">
-                    <h4>Robe Robin ParFect 100</h4>
-                    <ul>
-                      <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
-                      <li>Угол раскрытия 7</li>
-                      <li>В комплекте рассеивающая линза 40°</li>
-                      <li>Потребляемая мощность 200 Вт</li>
-                    </ul>
+                  <div class="arenda-slider__slide swiper-slide">
+                    <img src="img/arenda-slide1.png" alt="">
+                    <div class="slide-text">
+                      <h4>Robe Robin ParFect 100</h4>
+                      <ul>
+                        <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+                        <li>Угол раскрытия 7</li>
+                        <li>В комплекте рассеивающая линза 40°</li>
+                        <li>Потребляемая мощность 200 Вт</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-container">
+    <div class="wrapper-main">
+      <div class="news-content">
+        <div class="section-header section-header__layout">
+          <div class="section-header__title">
+            <img src="img/decor-heading.png" alt="">
+            <h2>Новости</h2>
+          </div>
+          <div class="">
+            <button class="news-btn">Все новости</button>
+          </div>
+        </div>
+        <div class="news-items">
+          <article class="news-main-item">
+            <img src="img/main-news.png" alt="">
+            <div class="news-main-text">
+              <div class="news-main-text-title">
+                <h3>Семинар Milos</h3>
+                <time>27.01.2019</time>
+              </div>
+              <p>Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</p>
+              <a href="#">Читать полностью...</a>
+            </div>
+          </article>
+          <div class="news-second-item">
+            <article class="news-item item1">
+              <h3>Выставка Prolight+Sound NAMM Russia 2016</h3>
+              <p>30 контрактов, тысячи восторженных посетителей...</p>
+              <div class="news-item-footer">
+                <img src="img/news-item1.png" alt="">
+                <time>27.01.2019</time>
+              </div>
+            </article>
+            <article class="news-item item2">
+              <h3>Семинар Robe</h3>
+              <p>30 января 2017 года наши сотрудники побывали в Берлине..</p>
+              <div class="news-item-footer">
+                <img src="img/news-item2.png" alt="">
+                <time>27.01.2019</time>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="news">
-  <div class="container">
-    <div class="news-content">
-      <div class="news-header">
-        <div class="news-title">
-          <img src="img/decor-heading.png" alt="">
-          <h2 class="main-header">Новости</h2>
+  <footer>
+    <div class="menu-footer">
+      <div class="wrapper-main">
+        <div class="footer-address-block">
+          <p>(812) 710-80-25</p>
+          <p>191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</p>
+          <p>mail@translight.ru</p>
         </div>
-        <div class="">
-          <button class="news-btn">Все новости</button>
-        </div>
-      </div>
-      <div class="news-items">
-        <article class="news-main-item">
-          <img src="img/main-news.png" alt="">
-          <div class="news-main-text">
-            <div class="news-main-text-title">
-              <h3>Семинар Milos</h3>
-              <time>27.01.2019</time>
-            </div>
-            <p>Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</p>
-            <a href="#">Читать полностью...</a>
+        <div class="footer-menu">
+          <div class="footer-menu-item">
+            <a href="#">О компании</a>
+            <a href="#">Новости</a>
           </div>
-        </article>
-        <div class="wrapper">
-          <article class="news-item item1">
-            <h3>Выставка Prolight+Sound NAMM Russia 2016</h3>
-            <p>30 контрактов, тысячи восторженных посетителей...</p>
-            <div class="news-item-footer">
-              <img src="img/news-item1.png" alt="">
-              <time>27.01.2019</time>
-            </div>
-          </article>
-          <article class="news-item item2">
-            <h3>Семинар  Robe</h3>
-            <p>30 января 2017 года наши сотрудники побывали в Берлине..</p>
-            <div class="news-item-footer">
-              <img src="img/news-item2.png" alt="">
-              <time>27.01.2019</time>
-            </div>
-          </article>
+          <div class="footer-menu-item">
+            <a href="">Каталог</a>
+            <a href="">Аренда</a>
+          </div>
+          <div class="footer-menu-item">
+            <a href="">Наши проекты</a>
+            <a href="">Сервисное обслуживание</a>
+          </div>
+        </div>
+        <div class="footer-about">
+          <p>© 2019 ЗАО «Транслайт». Все права защищены.</p>
+          <p>Разработка и дизайн</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<footer>
-  <div class="menu-footer">
-    <div class="container">
-      <div class="footer-address-block">
-        <p>(812) 710-80-25</p>
-        <p>191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</p>
-        <p>mail@translight.ru</p>
-      </div>
-      <hr>
-      <div class="footer-menu">
-        <div class="footer-menu-item">
-          <a href="#">О компании</a>
-          <a href="#">Новости</a>
-        </div>
-        <div class="footer-menu-item">
-          <a href="">Каталог</a>
-          <a href="">Аренда</a>
-        </div>
-        <div class="footer-menu-item">
-          <a href="">Наши проекты</a>
-          <a href="">Сервисное обслуживание</a>
-        </div>
-      </div>
-      <hr>
-      <div class="footer-about">
-        <p>© 2019 ЗАО «Транслайт». Все права защищены.</p>
-        <p>Разработка и дизайн</p>
-      </div>
-    </div>
-  </div>
-</footer>
-</body>
-
+  </footer>
+  <script src="js/tabs.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
 </html>

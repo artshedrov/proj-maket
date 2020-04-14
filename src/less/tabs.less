@@ -1,0 +1,50 @@
+.tab {
+  animation: fadeEffect 0.5s;
+  &__navigation {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 50px 0;
+  }
+  &__btn {
+    background: none;
+    font-family: @main-text;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: @second-text-color;
+    border: none;
+    margin: 0 23px 0 23px;
+    outline: none;
+    &--active {
+      background-color: white;
+      color: @primary-blue;
+      // border-bottom: 2px solid @primary-blue;
+      box-shadow: 0 8px 1px -5px @primary-blue;
+  
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  } 
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+// .tab-container {
+//   // margin: 0 15px 0 15px;
+//   img {
+//     margin: 0 5px 0 5px;
+//   }
+// }
