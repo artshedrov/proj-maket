@@ -1,4 +1,5 @@
 let projectSlider = new Swiper('.project__slider', {
+    slidesPerGroup: 2,
     slidesPerView: 2,
     spaceBetween: 10,
     navigation: {

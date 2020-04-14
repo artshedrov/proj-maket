@@ -67,19 +67,17 @@
   font-size: 48px;
   text-align: left;
   width: 70%;
-  margin: 200px 100px 50px 200px;
   z-index: 1;
 }
 .showcase__text {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   width: 60%;
-  margin: 0 190px 20px 200px;
+  margin: 0px 0px 35px 0px;
   z-index: 1;
 }
 .showcase__btn {
-  margin: 20px 190px 0 200px;
   z-index: 1;
 }
 .showcase__color-block {
@@ -88,6 +86,9 @@
   width: 444px;
   height: calc(100% - 80px);
   top: 80px;
+}
+.showcase-container {
+  margin: 200px 50px 90px 200px;
 }
 .section-container {
   margin: 136px 0 136px 0;
@@ -196,6 +197,34 @@
 .active[data-tab-content] {
   display: block;
 }
+.main-button {
+  color: #FFFF;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 2px solid #FFFFFF;
+  padding: 20px 45px;
+}
+.main-button:hover {
+  opacity: 0.7;
+}
+.news-btn {
+  width: 190px;
+  height: 51px;
+  color: #FFFF;
+  background: #005BC1;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.news-btn:hover {
+  opacity: 0.6;
+}
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -278,63 +307,8 @@ body {
   margin: 0;
   font-family: 'Oswald', sans-serif;
 }
-body .main-button {
-  color: #FFFF;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 22px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border: 2px solid #FFFFFF;
-  padding: 15px 41px;
-}
-body .main-button:hover {
-  opacity: 0.7;
-}
-body .project {
-  display: block;
-  justify-items: center;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-body .project .project-content {
-  display: flex;
-  flex-direction: column;
-}
 body .project-slider-navigation {
   display: flex;
-}
-body .project-slider {
-  height: auto;
-  overflow: hidden;
-}
-body .project-slides {
-  width: 500%;
-  height: 100%;
-  display: flex;
-}
-body .project-slides input[name="r"] {
-  position: absolute;
-  visibility: hidden;
-}
-body .project-slides #r1:checked ~ .s1 {
-  margin-left: 0;
-}
-body .project-slides #r2:checked ~ .s1 {
-  margin-left: -20%;
-}
-body .project-slide {
-  width: 20%;
-  transition: 0.6s;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow-x: hidden;
-}
-body .project-slide img {
-  width: 540px;
-  height: 400px;
 }
 body .project-slide-content {
   display: flex;
@@ -584,19 +558,6 @@ body .news p {
 body .news time {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-}
-body .news-btn {
-  width: 190px;
-  height: 51px;
-  color: #FFFF;
-  background: #005BC1;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-body .news-btn:hover {
-  opacity: 0.6;
 }
 body .news-items {
   display: flex;
