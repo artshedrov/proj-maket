@@ -167,6 +167,7 @@
   opacity: 0.7;
 }
 .tab {
+  width: 100%;
   -webkit-animation: fadeEffect 0.5s;
           animation: fadeEffect 0.5s;
 }
@@ -175,6 +176,32 @@
   flex-direction: row;
   justify-content: center;
   margin: 0 0 50px 0;
+}
+.tab__item {
+  display: inherit;
+  margin: 10px;
+  position: relative;
+}
+.tab__img {
+  position: relative;
+  width: 350px;
+}
+.tab__desc {
+  background: #005BC1;
+  position: absolute;
+  padding: 20px;
+  width: 265px;
+  height: 85px;
+  left: 24%;
+  bottom: 5%;
+}
+.tab__desc-title {
+  color: #FFFF;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  margin: 0;
 }
 .tab__btn {
   background: none;
@@ -215,7 +242,7 @@
   display: none;
 }
 .active[data-tab-content] {
-  display: block;
+  display: flex;
 }
 .main-btn {
   color: #FFFF;
@@ -289,7 +316,6 @@
   height: 110px;
   background: white;
   position: absolute;
-  /* margin: 40px 50px; */
   right: 5%;
   bottom: 5%;
   padding: 20px;
@@ -368,15 +394,6 @@ footer {
 .wrapper-main {
   max-width: 1110px;
   margin: 0 auto;
-}
-body .project-slide-content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  background-size: 540px 400px;
-  width: 540px;
-  height: 400px;
-  margin: 0 15px;
 }
 body .arenda-content {
   display: flex;
