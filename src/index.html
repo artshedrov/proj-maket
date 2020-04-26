@@ -35,14 +35,14 @@
         <div class="showcase">
           <h2 class="showcase__title">Светотехническое оборудование в Петербурге</h2>
           <p class="showcase__text">Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.</p>
-          <a class="showcase__btn main-button" href="#">Перейти</a>
+          <a class="main-btn showcase__btn" href="#">Перейти</a>
         </div>
       </div>
       <div class="showcase__color-block"></div>
     </div>
   </header>
 
-  <section class="section-container">
+  <section class="section-container" id="project">
     <div class="wrapper-main">
       <div class="section-header section-header__layout">
 
@@ -61,113 +61,127 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="img/slide1.png" alt="">
+            <div class="slide-content">
+              <h3 class="slide-content__title">ССК “ОЛИМП"</h3>
+              <p class="slide-content__text">Световое оформление форума “Шубы-2019”</p>
+            </div>
           </div>
+
           <div class="swiper-slide">
             <img src="img/slide2.png" alt="">
+            <div class="slide-content">
+              <h3 class="slide-content__title">ССК “ОЛИМП"</h3>
+              <p class="slide-content__text">Световое оформление форума “Шубы-2019”</p>
+            </div>
           </div>
+
           <div class="swiper-slide">
             <img src="img/slide1.png" alt="">
+            <div class="slide-content">
+              <h3 class="slide-content__title">ССК “ОЛИМП"</h3>
+              <p class="slide-content__text">Световое оформление форума “Шубы-2019”</p>
+            </div>
           </div>
+
           <div class="swiper-slide">
             <img src="img/slide2.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-container">
-    <div class="wrapper-main">
-      <div class="catalog2-content">
-        
-        <div class="section-header">
-          <div class="section-header__title">
-            <img src="img/decor-heading.png" alt="">
-            <h2>Каталог продукции</h2>
-          </div>
-        </div>
-
-        <div class="tab__navigation">
-          <button class="tab__btn tab__btn--active" data-tab-target="#robe">Robe</button>
-          <button class="tab__btn" data-tab-target="#compulite">Compulite</button>
-        </div>
-
-        <div id="robe" data-tab-content class="tab active">
-          <img src="img/slide_catalog1.png" alt="">
-          <img src="img/slide_catalog2.png" alt="">
-          <img src="img/slide_catalog3.png" alt="">
-        </div>
-        
-        <div id="compulite" data-tab-content class="tab">
-          <img src="img/slide_catalog1.png" alt="">
-          <img src="img/slide_catalog3.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-container">
-    <div class="wrapper-main">
-      <div class="arenda-content">
-        <div class="section-header">
-          <div class="section-header__title">
-            <img src="img/decor-heading.png" alt="">
-            <h2>Аренда оборудования</h2>
-          </div>
-        </div>
-
-        <div class="arenda-main-block">
-          <p>
-            Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
-          </p>
-          <div class="arenda-slider__container">
-            <div class="section-header">
-              <h2>Новое оборудование, предоставляемое в аренду:</h2>
-              <div class="slider-navigation">
-                <div class="arenda-slider__btn--prev slider-btn">&lt;</div>
-                <div class="arenda-slider__btn--next slider-btn">&gt;</div>
-              </div>
+            <div class="slide-content">
+              <h3 class="slide-content__title">ССК “ОЛИМП"</h3>
+              <p class="slide-content__text">Световое оформление форума “Шубы-2019”</p>
             </div>
-  
-            <div class="swiper-container">
-              <div class="arenda__slider arenda-slider__wrapper">
-                <div class="swiper-wrapper">
-                  <div class="arenda-slider__slide swiper-slide">
-                    <img src="img/arenda-slide1.png" alt="">
-                    <div class="slide-text">
-                      <h4>Robe Robin ParFect 100</h4>
-                      <ul>
-                        <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
-                        <li>Угол раскрытия 7</li>
-                        <li>В комплекте рассеивающая линза 40°</li>
-                        <li>Потребляемая мощность 200 Вт</li>
-                      </ul>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-container" id="catalog">
+    <div class="wrapper-main catalog__layout">
+      <div class="section-header">
+        <div class="section-header__title">
+          <img src="img/decor-heading.png" alt="">
+          <h2>Каталог продукции</h2>
+        </div>
+      </div>
+
+      <div class="tab__navigation">
+        <button class="tab__btn tab__btn--active" data-tab-target="#robe">Robe</button>
+        <button class="tab__btn" data-tab-target="#compulite">Compulite</button>
+      </div>
+
+      <div id="robe" data-tab-content class="tab active">
+        <img src="img/slide_catalog1.png" alt="">
+        <img src="img/slide_catalog2.png" alt="">
+        <img src="img/slide_catalog3.png" alt="">
+      </div>
+      
+      <div id="compulite" data-tab-content class="tab">
+        <img src="img/slide_catalog1.png" alt="">
+        <img src="img/slide_catalog3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section-container" id="arenda">
+    <div class="wrapper-main">
+      <div class="section-header">
+        <div class="section-header__title">
+          <img src="img/decor-heading.png" alt="">
+          <h2>Аренда оборудования</h2>
+        </div>
+      </div>
+
+      <div class="arenda-main-block">
+        <p>
+          Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
+        </p>
+        <div class="arenda-slider__container">
+          <div class="section-header">
+            <h2>Новое оборудование, предоставляемое в аренду:</h2>
+            <div class="slider-navigation">
+              <div class="arenda-slider__btn--prev slider-btn">&lt;</div>
+              <div class="arenda-slider__btn--next slider-btn">&gt;</div>
+            </div>
+          </div>
+
+          <div class="swiper-container">
+            <div class="arenda__slider arenda-slider__wrapper">
+              <div class="swiper-wrapper">
+                <div class="arenda-slider__slide swiper-slide">
+                  <img src="img/arenda-slide1.png" alt="">
+                  <div class="slide-text">
+                    <h4>Robe Robin ParFect 100</h4>
+                    <ul>
+                      <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+                      <li>Угол раскрытия 7</li>
+                      <li>В комплекте рассеивающая линза 40°</li>
+                      <li>Потребляемая мощность 200 Вт</li>
+                    </ul>
                   </div>
-                  <div class="arenda-slider__slide swiper-slide">
-                    <img src="img/arenda-slide1.png" alt="">
-                    <div class="slide-text">
-                      <h4>Robe Robin ParFect 100</h4>
-                      <ul>
-                        <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
-                        <li>Угол раскрытия 7</li>
-                        <li>В комплекте рассеивающая линза 40°</li>
-                        <li>Потребляемая мощность 200 Вт</li>
-                      </ul>
-                    </div>
+                </div>
+                <div class="arenda-slider__slide swiper-slide">
+                  <img src="img/arenda-slide1.png" alt="">
+                  <div class="slide-text">
+                    <h4>Robe Robin ParFect 100</h4>
+                    <ul>
+                      <li>Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+                      <li>Угол раскрытия 7</li>
+                      <li>В комплекте рассеивающая линза 40°</li>
+                      <li>Потребляемая мощность 200 Вт</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
+
       </div>
     </div>
   </section>
 
-  <section class="section-container">
+  <section class="section-container" id="news">
     <div class="wrapper-main">
       <div class="news-content">
         <div class="section-header section-header__layout">
@@ -176,7 +190,7 @@
             <h2>Новости</h2>
           </div>
           <div class="">
-            <a class="main-button news-btn" href="#">Все новости</a>
+            <a class="main-btn news-btn" href="#">Все новости</a>
           </div>
         </div>
         <div class="news-items">

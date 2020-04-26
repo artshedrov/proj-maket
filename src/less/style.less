@@ -11,7 +11,9 @@
 @import 'slider.less';
 @import 'footer.less';
 
-
+* {
+  box-sizing: border-box;
+}
 
 .wrapper-main {
   max-width: 1110px;
@@ -19,8 +21,8 @@
 }
 
 body {
-  margin: 0;
-  font-family: @main-text;
+  // margin: 0;
+  // font-family: @main-text;
 
   .project-slide-content {
     display: flex;
@@ -31,142 +33,37 @@ body {
     height: 400px;
     margin: 0 15px;
   }
-  .slide1 {
-    background-image: url("../img/slide1.png");
-    background-size: 540px 400px;
-    .project-slide-content
+  // .slide1 {
+  //   background-image: url("../img/slide1.png");
+  //   background-size: 540px 400px;
+  //   .project-slide-content
 
-  }
+  // }
 
-  .slide2 {
-    background: url("../img/slide2.png") no-repeat;
-    background-size: 540px 400px;
-    .project-slide-content
-  }
+  // .slide2 {
+  //   background: url("../img/slide2.png") no-repeat;
+  //   background-size: 540px 400px;
+  //   .project-slide-content
+  // }
 
-  .slide-text {
-    width: 250px;
-    // height: 110px;
-    background-color: white;
-    margin: 0 35px 35px 0;
+  // .slide-text {
+  //   width: 250px;
+  //   // height: 110px;
+  //   background-color: white;
+  //   margin: 0 35px 35px 0;
 
-    h2 {
-      font-size: 18px;
-      margin: 20px 0 0 25px;
-    }
+  //   h2 {
+  //     font-size: 18px;
+  //     margin: 20px 0 0 25px;
+  //   }
 
-    p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      line-height: 19px;
-      margin: 10px 25px;
-    }
-  }
-
-  .catalog2-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .catalog2-slider {
-    height: auto;
-    overflow: hidden;
-  }
-
-  .catalog2-slides {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    width: 500%;
-    height: 100%;
-
-    input[name="catalog"] {
-      position: absolute;
-      visibility: hidden;
-    }
-
-    #c1:checked ~ .cat1 {
-      margin-left: 0;
-    }
-
-    #c2:checked ~ .cat1 {
-      margin-left: -20%;
-    }
-  }
-
-  .catalog2-slide {
-    width: 20%;
-    transition: 0.6s;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    overflow-x: hidden;
-  }
-
-  .catalog-slide-content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background-size: 330px 280px;
-    width: 330px;
-    height: 280px;
-    margin: 0 15px;
-  }
-  .catalog-slide1 {
-    background-image: url("../img/slide_catalog1.png");
-    .catalog-slide-content
-  }
-
-  .catalog-slide2 {
-    background-image: url("../img/slide_catalog2.png");
-    .catalog-slide-content
-  }
-
-  .catalog-slide3 {
-    background-image: url("../img/slide_catalog3.png");
-    .catalog-slide-content
-  }
-
-  .catalog-slide-text {
-    color: white;
-    width: 265px;
-    height: 86px;
-    background-color: @primary-blue;
-    margin-bottom: 15px;
-
-    h2 {
-      text-transform: uppercase;
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 15px 36px 15px 21px;
-    }
-  }
-
-
-
-  .catalog2-slider-navigation {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 50px 0;
-  }
-
-  .catalog2-slider-bar {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    width: 50px;
-    height: 10px;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-    &:hover {
-      background: #FFFFFF;
-    }
-  }
-  .btn_pushed {
-    background: blue;
-  }
+  //   p {
+  //     font-family: 'Open Sans', sans-serif;
+  //     font-size: 14px;
+  //     line-height: 19px;
+  //     margin: 10px 25px;
+  //   }
+  // }
 
   .arenda-content {
     display: flex;
