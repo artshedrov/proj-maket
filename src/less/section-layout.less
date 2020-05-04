@@ -9,9 +9,15 @@
 .section-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
   &__title {
     text-transform: uppercase;
     display: flex;
+    &--common {
+      font-family: @main-text;
+      color: @second-text-color;
+    }
     img {
       margin: auto;
       padding-right: 20px;
@@ -31,4 +37,16 @@
 .arenda__content {
   display: flex;
   flex-direction: column;
+}
+
+.arenda__layout {
+  display: flex;
+  flex-direction: row;
+}
+.arenda__text{
+  font-size: 18px;
+  font-family: @second-text;
+  line-height: 25px;
+  padding: 100px 80px 100px 0;
+  color: @second-text-color;
 }
