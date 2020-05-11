@@ -11,341 +11,130 @@
 @import 'slider.less';
 @import 'footer.less';
 
-
+* {
+  box-sizing: border-box;
+}
 
 .wrapper-main {
   max-width: 1110px;
   margin: 0 auto;
 }
 
-body {
-  margin: 0;
-  font-family: @main-text;
+// body { 
 
-  .project-slide-content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background-size: 540px 400px;
-    width: 540px;
-    height: 400px;
-    margin: 0 15px;
-  }
-  .slide1 {
-    background-image: url("../img/slide1.png");
-    background-size: 540px 400px;
-    .project-slide-content
+//   // .news {
+//   //   display: block;
+//   //   justify-items: center;
+//   //   flex-wrap: nowrap;
+//   //   align-items: center;
+//   //   margin: 0 0 100px 0;
+//   //   // .news-content {
+//   //   //   display: flex;
+//   //   //   flex-direction: column;
+//   //   // }
+//   //   h3 {
+//   //     text-transform: uppercase;
+//   //     font-family: 'Oswald', sans-serif;
+//   //     font-size: 18px;
+//   //   }
+//   //   p {
+//   //     font-family: 'Open Sans', sans-serif;
+//   //     font-size: 14px;
+//   //   }
+//   //   time {
+//   //     font-family: 'Open Sans', sans-serif;
+//   //     font-size: 14px;
+//   //   }
 
-  }
+//   // } 
+//   // .news-items {
+//   //   display: flex;
+//   //   flex-direction: row;
+//   //   align-items: flex-start;
+//   //   //margin: 0 0 10px 10px;
 
-  .slide2 {
-    background: url("../img/slide2.png") no-repeat;
-    background-size: 540px 400px;
-    .project-slide-content
-  }
+//   // }
+//   // .news-main-item {
+//   //   display: flex;
+//   //   flex-direction: row;
+//   //   align-items: flex-start;
+//   //   width: 80%;
+//   //   margin: auto;
+//   //   img {
+//   //     width: 255px;
+//   //     height: 240px;
+//   //     padding: 20px;
+//   //   }
+//   // }
 
-  .slide-text {
-    width: 250px;
-    // height: 110px;
-    background-color: white;
-    margin: 0 35px 35px 0;
+//   .news-main-text {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 5px;
+//     p {
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//     }
+//     a {
+//     }
+//   }
+//   .news-main-text-title {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+//   // .news-item {
+//   //   display: flex;
+//   //   flex-direction: column;
+//   //   // margin: 0 20px;
+//   //   margin: auto;
+//   //   img {
+//   //     width: 128px;
+//   //     height: 115px;
+//   //   }
+//   //   h3 {
+//   //     text-transform: uppercase;
+//   //   }
+//   // }
+//   .item1 {
+//     h3 {
+//     }
+//     p {
+//       margin: 0 0 27px 0;
+//     }
+//   }
 
-    h2 {
-      font-size: 18px;
-      margin: 20px 0 0 25px;
-    }
+//   .item2 {
+//     h3 {
+//       padding-bottom: 10px;
+//     }
+//     p {
+//       margin-top: 10px;
+//     }
+//   }
+//   .news-second-item {
+//     display: flex;
+//   }
 
-    p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      line-height: 19px;
-      margin: 10px 25px;
-    }
-  }
-
-  .catalog2-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .catalog2-slider {
-    height: auto;
-    overflow: hidden;
-  }
-
-  .catalog2-slides {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    width: 500%;
-    height: 100%;
-
-    input[name="catalog"] {
-      position: absolute;
-      visibility: hidden;
-    }
-
-    #c1:checked ~ .cat1 {
-      margin-left: 0;
-    }
-
-    #c2:checked ~ .cat1 {
-      margin-left: -20%;
-    }
-  }
-
-  .catalog2-slide {
-    width: 20%;
-    transition: 0.6s;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    overflow-x: hidden;
-  }
-
-  .catalog-slide-content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background-size: 330px 280px;
-    width: 330px;
-    height: 280px;
-    margin: 0 15px;
-  }
-  .catalog-slide1 {
-    background-image: url("../img/slide_catalog1.png");
-    .catalog-slide-content
-  }
-
-  .catalog-slide2 {
-    background-image: url("../img/slide_catalog2.png");
-    .catalog-slide-content
-  }
-
-  .catalog-slide3 {
-    background-image: url("../img/slide_catalog3.png");
-    .catalog-slide-content
-  }
-
-  .catalog-slide-text {
-    color: white;
-    width: 265px;
-    height: 86px;
-    background-color: @primary-blue;
-    margin-bottom: 15px;
-
-    h2 {
-      text-transform: uppercase;
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-      margin: 15px 36px 15px 21px;
-    }
-  }
-
-
-
-  .catalog2-slider-navigation {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 50px 0;
-  }
-
-  .catalog2-slider-bar {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    width: 50px;
-    height: 10px;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
-    &:hover {
-      background: #FFFFFF;
-    }
-  }
-  .btn_pushed {
-    background: blue;
-  }
-
-  .arenda-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .arenda-main-block {
-    display: flex;
-    flex-direction: row;
-    p {
-      font-family: Open Sans, serif;
-      font-size: 18px;
-      margin: 110px 95px 0 0;
-    }
-  }
-
-  .arenda-l-block {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid @primary-blue;
-  }
-
-  .arenda-l-block-header {
-    display: flex;
-    flex-direction: row;
-    margin: 30px 0 0 20px;
-    .arenda-l-block-title {
-      margin-right: 20px;
-    }
-    h3 {
-      font-size: 18px;
-      text-transform: uppercase;
-      margin: 0;
-    }
-    .arenda-slider-navigation {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0 15px 0 15px;
-      label {
-        margin: 0;
-      }
-
-    }
-  }
-
-  .arenda-slide-content {
-    display: flex;
-    flex-direction: row;
-    img {
-      width: 255px;
-      height: 250px;
-    }
-    h4 {
-      color: @second-text-color;
-      font-family: 'Oswald', sans-serif;
-      font-size: 16px;
-    }
-    li {
-      color: @second-text-color;
-      font-size: 14px;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-  }
-
-  .news {
-    display: block;
-    justify-items: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 0 0 100px 0;
-    .news-content {
-      display: flex;
-      flex-direction: column;
-    }
-    h3 {
-      text-transform: uppercase;
-      font-family: 'Oswald', sans-serif;
-      font-size: 18px;
-    }
-    p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-    }
-    time {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-    }
-
-  } 
-  .news-items {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    //margin: 0 0 10px 10px;
-
-  }
-  .news-main-item {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 80%;
-    margin: auto;
-    img {
-      width: 255px;
-      height: 240px;
-      padding: 20px;
-    }
-  }
-
-  .news-main-text {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    p {
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    a {
-    }
-  }
-  .news-main-text-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .news-item {
-    display: flex;
-    flex-direction: column;
-    // margin: 0 20px;
-    margin: auto;
-    img {
-      width: 128px;
-      height: 115px;
-    }
-    h3 {
-      text-transform: uppercase;
-    }
-  }
-  .item1 {
-    h3 {
-    }
-    p {
-      margin: 0 0 27px 0;
-    }
-  }
-
-  .item2 {
-    h3 {
-      padding-bottom: 10px;
-    }
-    p {
-      margin-top: 10px;
-    }
-  }
-  .news-second-item {
-    display: flex;
-  }
-
-  .news-item-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    //margin: 10px;
-    img {
-      margin: 5px;
-    }
-    time {
-      margin: 5px;
-    }
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 45%;
-  }
-}
+//   // .news-item-footer {
+//   //   display: flex;
+//   //   flex-direction: row;
+//   //   justify-content: space-between;
+//   //   align-items: flex-end;
+//   //   //margin: 10px;
+//   //   img {
+//   //     margin: 5px;
+//   //   }
+//   //   time {
+//   //     margin: 5px;
+//   //   }
+//   // }
+//   .wrapper {
+//     display: flex;
+//     flex-direction: row;
+//     width: 45%;
+//   }
+// }
 
 

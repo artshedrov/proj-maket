@@ -1,7 +1,7 @@
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
+// .swiper-container {
+//     width: 100%;
+//     height: 100%;
+// }
 .swiper-slide {
   // /* Center slide text vertically */
   display: -webkit-box;
@@ -26,18 +26,6 @@
   position: relative !important
 }
 
-.arenda-slider {
-  &__container {
-    border: 3px solid @primary-blue;
-  }
-  &__wrapper{
-    width: 600px;
-  }
-  &__slide {
-    display: flex;
-  }
-}
-
 .slider-navigation {
   display: flex;
 }
@@ -55,5 +43,69 @@
 
   &:hover {
     background: #FFFFFF;
+  }
+}
+
+.slide-content {
+  width: 250px;
+  height: 110px;
+  background: white;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  padding: 20px;
+  &__title {
+    color: @second-text-color;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    margin: 0;
+  }
+  &__text {
+    color: @second-text-color;
+    font-family: @second-text;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.arenda-slider {
+  &__header {
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-family: @main-text;
+    color: @second-text-color;
+  }
+  &__block {
+    border: 3px solid @primary-blue;
+  }
+  &__container {
+    padding: 30px;
+  }
+  &__wrapper{
+    width: 600px;
+  }
+  &__slide {
+    display: flex;
+  }
+}
+
+.arenda-slide {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-size: 16px;
+    font-family: @main-text;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    color: @second-text-color;
+
+  }
+  &__item {
+    font-size: 14px;
+    font-family: @second-text;
+    color: @second-text-color;
   }
 }
