@@ -17,7 +17,7 @@
     <div class="header__content">
       <div class="logo">
         <a href="/">
-          <img   src="img/logo.png" alt="">
+          <img src="img/logo.png" alt="">
         </a>
       </div>
       <nav class="nav">
@@ -119,13 +119,17 @@
           </div>
         </div>
         <div class="tab__item">
-          <img src="img/slide_catalog2.png" alt="">
+          <div class="tab__img">
+            <img src="img/slide_catalog2.png" alt="">
+          </div>
           <div class="tab__desc">
             <h3 class="tab__desc-title">Контроллеры</h3>
           </div>
         </div>
         <div class="tab__item">
-          <img src="img/slide_catalog3.png" alt="">
+          <div class="tab__img">
+            <img src="img/slide_catalog3.png" alt="">
+          </div>
           <div class="tab__desc">
             <h3 class="tab__desc-title">Аксессуары</h3>
           </div>
@@ -142,17 +146,28 @@
           </div>
         </div>
         <div class="tab__item">
-          <img src="img/slide_catalog3.png" alt="">
+          <div class="tab__img">
+            <img src="img/slide_catalog3.png" alt="">
+          </div>
           <div class="tab__desc">
             <h3 class="tab__desc-title">Аксессуары</h3>
           </div>
         </div>
+        <div class="tab__item">
+          <div class="tab__img">
+            <img src="img/slide_catalog2.png" alt="">
+          </div>
+          <div class="tab__desc">
+            <h3 class="tab__desc-title">Контроллеры</h3>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
 
   <section class="section-container" id="arenda">
-    <div class="wrapper-main">
+    <div class="wrapper-main arenda__layout">
       <div class="section-header">
         <div class="section-header__title">
           <img src="img/decor-heading.png" alt="">
@@ -160,7 +175,7 @@
         </div>
       </div>
 
-      <div class="arenda__layout">
+      <div class="arenda__content">
         <p class="arenda__text">
           Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
         </p>
@@ -214,47 +229,45 @@
   </section>
 
   <section class="section-container" id="news">
-    <div class="wrapper-main">
-      <div class="news-content">
-        <div class="section-header section-header__layout">
-          <div class="section-header__title">
-            <img src="img/decor-heading.png" alt="">
-            <h2>Новости</h2>
-          </div>
-          <div class="">
-            <a class="main-btn news-btn" href="#">Все новости</a>
-          </div>
+    <div class="wrapper-main news__layout">
+      <div class="section-header">
+        <div class="section-header__title">
+          <img src="img/decor-heading.png" alt="">
+          <h2>Новости</h2>
         </div>
-        <div class="news-items">
-          <article class="news-main-item">
-            <img src="img/main-news.png" alt="">
-            <div class="news-main-text">
-              <div class="news-main-text-title">
-                <h3>Семинар Milos</h3>
-                <time>27.01.2019</time>
-              </div>
-              <p>Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</p>
-              <a href="#">Читать полностью...</a>
+        <a class="main-btn news-btn" href="#">Все новости</a>
+      </div>
+      <div class="news__content">
+        <article class="news-main">
+          <div class="news-main__img-wrap">
+            <img class="news-main__img" src="img/main-news.png" alt="">
+          </div>
+          <div class="news-main__text-wrap">
+            <div class="news__header">
+              <h3>Семинар Milos</h3>
+              <time>27.01.2019</time>
+            </div>
+            <p class="news__text">Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.</p>
+            <a href="#">Читать полностью...</a>
+          </div>
+        </article>
+        <div class="news-second">
+          <article class="news-second__item">
+            <h3 class="news__header">Выставка Prolight+Sound NAMM Russia 2016</h3>
+            <p class="news__text">30 контрактов, тысячи восторженных посетителей...</p>
+            <div class="news-second__footer">
+              <img class="news-second__img" src="img/news-item1.png" alt="">
+              <time>27.01.2019</time>
             </div>
           </article>
-          <div class="news-second-item">
-            <article class="news-item item1">
-              <h3>Выставка Prolight+Sound NAMM Russia 2016</h3>
-              <p>30 контрактов, тысячи восторженных посетителей...</p>
-              <div class="news-item-footer">
-                <img src="img/news-item1.png" alt="">
-                <time>27.01.2019</time>
-              </div>
-            </article>
-            <article class="news-item item2">
-              <h3>Семинар Robe</h3>
-              <p>30 января 2017 года наши сотрудники побывали в Берлине..</p>
-              <div class="news-item-footer">
-                <img src="img/news-item2.png" alt="">
-                <time>27.01.2019</time>
-              </div>
-            </article>
-          </div>
+          <article class="news-second__item">
+            <h3 class="news__header">Семинар Robe</h3>
+            <p class="news__text">30 января 2017 года наши сотрудники побывали в Берлине..</p>
+            <div class="news-second__footer">
+              <img class="news-second__img" src="img/news-item2.png" alt="">
+              <time>27.01.2019</time>
+            </div>
+          </article>
         </div>
       </div>
     </div>
