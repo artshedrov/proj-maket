@@ -112,10 +112,27 @@
   &__footer {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: flex-end;
+  }
+  &__date {
+    font-size: 14px;
+    font-family: @second-text;
+    color: @second-text-color;
   }
   time {
     padding-left: 12px;
+  }
+}
+
+.text {
+  &__wrap1 {
+    margin: 10px 0 20px 0;
+    height: calc(100% - 10px);
+    position: relative;
+  }
+  &__wrap2 {
+    margin: 35px 0 10px 0;
+    height: calc(100% - 10px);
+    position: relative;
   }
 }

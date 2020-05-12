@@ -178,8 +178,23 @@
   flex-direction: row;
   align-items: flex-end;
 }
+.news-second__date {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #343434;
+}
 .news-second time {
   padding-left: 12px;
+}
+.text__wrap1 {
+  margin: 10px 0 20px 0;
+  height: calc(100% - 10px);
+  position: relative;
+}
+.text__wrap2 {
+  margin: 35px 0 10px 0;
+  height: calc(100% - 10px);
+  position: relative;
 }
 .logo {
   flex: 2;
