@@ -75,7 +75,7 @@
   font-family: 'Oswald', sans-serif;
 }
 .section-container {
-  margin: 136px 0 136px 0;
+  margin: 120px 0 120px 0;
 }
 .section-container h2 {
   font-size: 30px;
@@ -171,7 +171,6 @@
 .news-second__img {
   width: 128px;
   height: 115px;
-  padding-right: 12px;
 }
 .news-second__footer {
   display: flex;
@@ -316,7 +315,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   border: 2px solid #FFFFFF;
-  padding: 20px 45px;
+  padding: 12px 43px;
 }
 .main-btn:hover {
   opacity: 0.6;
@@ -329,7 +328,7 @@
   text-decoration: none;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 15px 34px;
+  padding: 18px 26px;
 }
 .news-btn:hover {
   opacity: 0.6;
@@ -420,56 +419,58 @@
   font-family: 'Open Sans', sans-serif;
   color: #343434;
 }
-footer {
+.footer {
   background: #005BC1;
   height: 255px;
 }
-.footer-address-block {
+.footer__container {
+  padding: 35px 0 25px 0;
+}
+.footer-address {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #FFFFFF;
 }
-.footer-address-block p {
+.footer-address__text {
   color: #FFFF;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   line-height: 19px;
 }
-.footer-address-block p:nth-child(1) {
+.footer-address__text:nth-child(1) {
   font-size: 18px;
 }
 .footer-menu {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #FFFFFF;
+  padding: 25px 0;
 }
-.footer-menu a {
+.footer-menu__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 110px 0 0;
+}
+.footer-menu__link {
   color: #FFFF;
   text-decoration: none;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   line-height: 19px;
   cursor: pointer;
-}
-.footer-menu a:hover {
-  opacity: 0.6;
-}
-.footer-menu-item {
-  display: flex;
-  flex-direction: column;
-  margin: 0 110px 0 0;
-}
-.footer-menu-item a {
   margin: 5px 0 5px 0;
+}
+.footer-menu__link:hover {
+  opacity: 0.6;
 }
 .footer-about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer-about p {
+.footer-about__text {
   font-size: 14px;
   color: #FFFF;
   font-family: 'Open Sans', sans-serif;
