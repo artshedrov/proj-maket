@@ -1,6 +1,10 @@
 .nav {
   flex: 3 100px;
   margin: 0 40px 0 0;
+
+  @media (max-width: 768px) {
+    flex: 4 100px;
+  }
   &__menu {
     list-style: none;
     display: flex;
@@ -9,9 +13,15 @@
     padding-left: 15px;
     padding-right: 30px;
     align-items: center;
+
     @media (max-width: 1024px) {
       padding: 0 15px 0 15px;
     }
+
+    @media (max-width: 768px) {
+      padding: 0 10px 0 10px;
+    }
+    
     a {
       color: @white-text;
       font-size: 14px;

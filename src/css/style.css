@@ -11,7 +11,6 @@
   height: 58px;
 }
 
-
 /*fonts, colors*/
 .header {
   position: relative;
@@ -91,6 +90,11 @@
   font-size: 30px;
   letter-spacing: 0.05em;
 }
+@media (max-width: 768px) {
+  .section-container {
+    margin: 110px 0 110px 0;
+  }
+}
 .section-header {
   display: flex;
   align-items: center;
@@ -117,6 +121,12 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 920px) {
+  .arenda__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .arenda__layout {
   display: flex;
   flex-direction: column;
@@ -127,6 +137,11 @@
   line-height: 25px;
   padding: 100px 80px 100px 0;
   color: #343434;
+}
+@media (max-width: 1024px) {
+  .arenda__text {
+    padding: 20px 20px 20px 20px;
+  }
 }
 .news__layout {
   display: flex;
@@ -237,6 +252,11 @@
   flex: 3 100px;
   margin: 0 40px 0 0;
 }
+@media (max-width: 768px) {
+  .nav {
+    flex: 4 100px;
+  }
+}
 .nav__menu {
   list-style: none;
   display: flex;
@@ -249,6 +269,11 @@
 @media (max-width: 1024px) {
   .nav__item {
     padding: 0 15px 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .nav__item {
+    padding: 0 10px 0 10px;
   }
 }
 .nav__item a {
@@ -291,13 +316,38 @@
   left: 25%;
   bottom: 5%;
 }
+@media (max-width: 995px) {
+  .tab__desc {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .tab__desc {
+    padding: 10px 0 10px 10px;
+  }
+}
 .tab__desc-title {
   color: #FFFF;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 1em;
+  font-size: 18px;
   margin: 0;
+}
+@media (max-width: 1047px) {
+  .tab__desc-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 995px) {
+  .tab__desc-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .tab__desc-title {
+    font-size: 12px;
+  }
 }
 .tab__btn {
   background: none;
@@ -396,25 +446,30 @@
   background: #FFFFFF;
 }
 .slide-content {
-  width: 250px;
-  height: 110px;
+  width: calc(100% - 40%);
+  height: calc(100% - 70%);
   background: white;
   position: absolute;
   right: 5%;
   bottom: 5%;
   padding: 20px;
 }
+@media (max-width: 825px) {
+  .slide-content {
+    padding: 10px;
+  }
+}
 .slide-content__title {
   color: #343434;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 18px;
+  font-size: 1em;
   margin: 0;
 }
 .slide-content__text {
   color: #343434;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 0.8em;
   margin: 0;
 }
 .project-slide__img {
