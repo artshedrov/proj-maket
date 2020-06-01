@@ -17,6 +17,11 @@
   width: 100%;
   height: 800px;
 }
+@media (max-width: 1024px) {
+  .header {
+    height: 500px;
+  }
+}
 .header__banner {
   margin: auto;
   position: absolute;
@@ -49,6 +54,11 @@
   width: 70%;
   z-index: 1;
 }
+@media (max-width: 1024px) {
+  .showcase__title {
+    font-size: 42px;
+  }
+}
 .showcase__text {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
@@ -56,6 +66,11 @@
   width: 60%;
   margin: 0px 0px 35px 0px;
   z-index: 1;
+}
+@media (max-width: 1024px) {
+  .showcase__text {
+    font-size: 14px;
+  }
 }
 .showcase__btn {
   z-index: 1;
@@ -69,6 +84,11 @@
 }
 .showcase-container {
   margin: 200px 50px 90px 200px;
+}
+@media (max-width: 1024px) {
+  .showcase-container {
+    margin: 50px 50px;
+  }
 }
 .body-container {
   margin: 0;
@@ -150,18 +170,33 @@
 .news__content {
   display: flex;
 }
+@media (max-width: 1010px) {
+  .news__content {
+    flex-wrap: wrap;
+  }
+}
 .news-main {
   display: flex;
+}
+@media (max-width: 1010px) {
+  .news-main {
+    padding: 0 30px;
+  }
 }
 .news-main__img-wrap {
   padding-top: 30px;
 }
+@media (max-width: 1010px) {
+  .news-main__img-wrap {
+    padding-top: 20px;
+  }
+}
 .news-main__img {
   width: 255px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1010px) {
   .news-main__img {
-    width: 220px;
+    width: 200px;
   }
 }
 .news-main__text-wrap {
@@ -202,6 +237,11 @@
 .news-second {
   display: flex;
 }
+@media (max-width: 1010px) {
+  .news-second {
+    padding: 30px 0;
+  }
+}
 .news-second__item {
   display: flex;
   flex-direction: column;
@@ -238,6 +278,11 @@
   height: calc(100% - 10px);
   position: relative;
 }
+@media (max-width: 1010px) {
+  .text__wrap2 {
+    margin: 10px 0 10px 0;
+  }
+}
 .logo {
   flex: 2;
   margin: 0 0 0 40px;
@@ -271,7 +316,7 @@
     padding: 0 15px 0 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav__item {
     padding: 0 10px 0 10px;
   }
@@ -538,8 +583,18 @@
   font-family: 'Open Sans', sans-serif;
   line-height: 19px;
 }
+@media (max-width: 1010px) {
+  .footer-address__text {
+    font-size: 12px;
+  }
+}
 .footer-address__text:nth-child(1) {
   font-size: 18px;
+}
+@media (max-width: 1010px) {
+  .footer-address__text:nth-child(1) {
+    font-size: 14px;
+  }
 }
 .footer-menu {
   display: flex;
