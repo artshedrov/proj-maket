@@ -1,9 +1,13 @@
 .section-container {
-  margin: 136px 0 136px 0;
+  margin: 120px 0 120px 0;
   h2 {
     font-size: 30px;
     letter-spacing: 0.05em;
   }
+  @media (max-width:768px) {
+    margin: 110px 0 110px 0;
+  }
+
 }
 
 .section-header {
@@ -34,6 +38,10 @@
 .arenda__content {
   display: flex;
   flex-direction: row;
+  @media(max-width: 920px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .arenda__layout {
@@ -46,6 +54,9 @@
   line-height: 25px;
   padding: 100px 80px 100px 0;
   color: @second-text-color;
+  @media(max-width: 1024px) {
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 
@@ -56,17 +67,27 @@
 
 .news__content {
   display: flex;
+  @media(max-width: 1010px) {
+    flex-wrap: wrap;
+  }
 }
 
 .news-main {
   display: flex;
+  @media(max-width: 1010px) {
+    padding: 0 30px;
+  }
   &__img-wrap {
     padding-top: 30px;
+    @media(max-width: 1010px) {
+      padding-top: 20px;
+    }
   }
   &__img {
     width: 255px;
-    height: 240px;
-    // padding: 20px;
+    @media(max-width: 1010px) {
+      width: 200px;
+    }
   }
   &__text-wrap {
     display: flex;
@@ -88,6 +109,10 @@
   font-size: 18px;
   color: @second-text-color;
   font-family: @main-text;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
 }
 
 .news__text {
@@ -95,10 +120,17 @@
   font-family: @second-text;
   color: @second-text-color;
   margin: auto;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
 }
 
 .news-second {
   display: flex;
+  @media(max-width: 1010px) {
+    padding: 30px 0;
+  }
   &__item {
     display: flex;
     flex-direction: column;
@@ -106,16 +138,38 @@
   }
   &__img {
     width: 128px;
-    height: 115px;
-    padding-right: 12px;
+    
+    @media (max-width: 1024px) {
+      width: 120px;
+    }
   }
   &__footer {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: flex-end;
+  }
+  &__date {
+    font-size: 14px;
+    font-family: @second-text;
+    color: @second-text-color;
   }
   time {
     padding-left: 12px;
+  }
+}
+
+.text {
+  &__wrap1 {
+    margin: 10px 0 20px 0;
+    height: calc(100% - 10px);
+    position: relative;
+  }
+  &__wrap2 {
+    margin: 35px 0 10px 0;
+    height: calc(100% - 10px);
+    position: relative;
+    @media(max-width: 1010px) {
+      margin: 10px 0 10px 0;
+    }
   }
 }
