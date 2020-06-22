@@ -1,0 +1,46 @@
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  &__line {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: @gray-color;
+    &::before {
+      position: absolute;
+      width: 30px;
+      height: 5px;
+      left: 0;
+      top: -10px;
+      content: '';
+      background-color: @gray-color;
+      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: @gray-color;
+      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+  }
+}
+
+.mobile-menu__active {
+  background-color: transparent;
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2 ease-in 0.2s;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+}

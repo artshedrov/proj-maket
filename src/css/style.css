@@ -1,5 +1,4 @@
 
-
 .logo {
   flex: 2;
   margin: 0 0 0 40px;
@@ -629,6 +628,51 @@
   color: #FFFF;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
+}
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu__line {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: #E5E5E5;
+}
+.mobile-menu__line::before {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  left: 0;
+  top: -10px;
+  content: '';
+  background-color: #E5E5E5;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.mobile-menu__line::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  width: 30px;
+  height: 5px;
+  background-color: #E5E5E5;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.mobile-menu__active {
+  background-color: transparent;
+}
+.mobile-menu__active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2 ease-in 0.2s;
+}
+.mobile-menu__active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 * {
   box-sizing: border-box;
