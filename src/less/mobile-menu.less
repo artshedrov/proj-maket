@@ -1,13 +1,22 @@
 .mobile-menu {
+  display: none;
   width: 30px;
   height: 30px;
   justify-content: center;
   align-items: center;
+  margin-right: 30px;
+  @media(max-width: 760px) {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    right: 10px;
+  }
   &__line {
     position: relative;
     width: 30px;
     height: 5px;
     background-color: @gray-color;
+    margin: 10px;
     &::before {
       position: absolute;
       width: 30px;
