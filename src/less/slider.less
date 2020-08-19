@@ -36,9 +36,13 @@
   cursor: pointer;
   transition: 0.4s;
   box-sizing: border-box;
-
   &:hover {
     background: #FFFFFF;
+  }
+  @media (max-width: 415px) {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
 }
 
@@ -81,6 +85,9 @@
     text-transform: uppercase;
     font-family: @main-text;
     color: @second-text-color;
+    @media (max-width: 415px) {
+      font-size: 12px;
+    }
   }
   &__container {
     padding: 30px;
@@ -89,6 +96,10 @@
     height: 400px;
     @media (max-width: 1024px) {
       width: 600px;
+    }
+    @media (max-width: 415px) {
+      width: 400px;
+      height: 280px;
     }
   }
   &__wrapper{
@@ -109,14 +120,30 @@
     text-transform: uppercase;
     padding-left: 30px;
     color: @second-text-color;
+    @media (max-width: 415px) {
+      font-size: 12px;
+    }
 
+  }
+  &__img {
+    width: 350px;
+    @media (max-width: 415px) {
+      width: 50%;
+    }
   }
   &__list {
     padding: 0 40px 0 40px;
+    @media (max-width: 415px) {
+    padding: 0 0 0 40px;
+    margin: 0;
+    }
   }
   &__item {
     font-size: 14px;
     font-family: @second-text;
     color: @second-text-color;
+    @media (max-width: 415px) {
+      font-size: 10px;
+    }
   }
 }
