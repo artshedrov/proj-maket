@@ -20,6 +20,9 @@
           <img src="img/logo.png" alt="">
         </a>
       </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__line"></div>
+      </div>
       <nav class="nav">
         <ul class="nav__menu">
           <li class="nav__item"><a href="#">О компании</a></li>
@@ -57,7 +60,7 @@
 
       </div>
 
-      <div class="project__slider swiper-container">
+      <div class="swiper-container project__slider" id="project-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide project-slide">
             <img class="project-slide__img" src="img/slide1.png" alt="">
@@ -180,11 +183,11 @@
             <div class="arenda-slider__wrapper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="img/arenda-slide1.png" alt="">
+                  <img class="arenda-slide__img"src="img/arenda-slide1.png" alt="">
                   <div class="arenda-slide">
                     <h4 class="arenda-slide__title">Robe Robin ParFect 100</h4>
                     <ul class="arenda-slide__list">
-                      <li class="arenda-slide__item">Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+                      <li class="arenda-slide__item">Источник света 12 светодиодов RGBW по 15 Вт каждый</li>
                       <li class="arenda-slide__item">Угол раскрытия 7</li>
                       <li class="arenda-slide__item">В комплекте рассеивающая линза 40°</li>
                       <li class="arenda-slide__item">Потребляемая мощность 200 Вт</li>
@@ -192,11 +195,11 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/arenda-slide1.png" alt="">
+                  <img class="arenda-slide__img" src="img/arenda-slide1.png" alt="">
                   <div class="arenda__slide">
                     <h4 class="arenda-slide__title">Robe Robin ParFect 100</h4>
                     <ul class="arenda-slide__list">
-                      <li class="arenda-slide__item">Источник света 12 светодиодов RGBW  по 15 Вт каждый</li>
+                      <li class="arenda-slide__item">Источник света 12 светодиодов RGBW по 15 Вт каждый</li>
                       <li class="arenda-slide__item">Угол раскрытия 7</li>
                       <li class="arenda-slide__item">В комплекте рассеивающая линза 40°</li>
                       <li class="arenda-slide__item">Потребляемая мощность 200 Вт</li>
@@ -217,7 +220,7 @@
       <div class="section-header">
         <div class="section-header__title">
           <img src="img/decor-heading.png" alt="">
-          <h2>Новости</h2>
+          <h2 class="section-header__title--common">Новости</h2>
         </div>
         <a class="main-btn news-btn" href="#">Все новости</a>
       </div>
@@ -286,6 +289,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/mobile-menu.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>

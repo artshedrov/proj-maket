@@ -12,6 +12,9 @@
     margin: 10px;
     position: relative;
     width: 100%;
+    @media (max-width: 415px) {
+      width: 70%;
+    }
   }
   &__img {
     position: relative;
@@ -22,7 +25,6 @@
     background: @primary-blue;
     position: absolute;
     padding: 20px;
-    //padding: 10px 0 10px 10px;
     width: calc(100% - 25%);
     height: calc(100% - 70%);
     left: 25%;
@@ -55,6 +57,9 @@
     @media (max-width: 768px) {
       font-size: 12px;
     }
+    @media (max-width: 415px) {
+      font-size: 14px;
+    }
   }
   &__btn {
     background: none;
@@ -74,6 +79,9 @@
     &:hover {
       opacity: 0.6;
     }
+    @media (max-width: 415px) {
+      font-size: 16px;
+    }
   } 
 }
 
@@ -88,4 +96,8 @@
 
 .active[data-tab-content] {
   display: flex;
+  @media (max-width: 415px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

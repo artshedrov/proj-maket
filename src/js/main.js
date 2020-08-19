@@ -1,3 +1,13 @@
+window.onresize = function() {
+  if (window.innerWidth <= 760) {
+    projectSlider.params.slidesPerGroup = 1;
+    projectSlider.params.slidesPerView = 1;
+  } else if (window.innerWidth > 760) {
+    projectSlider.params.slidesPerGroup = 2;
+    projectSlider.params.slidesPerView = 2;
+  }
+}
+
 let projectSlider = new Swiper('.project__slider', {
   slidesPerGroup: 2,
   slidesPerView: 2,
@@ -15,4 +25,4 @@ let arendaSlider = new Swiper ('.arenda-slider__wrapper', {
     nextEl: '.arenda-slider__btn--next',
     prevEl: '.arenda-slider__btn--prev'
   }
-})
+});

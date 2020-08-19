@@ -1,11 +1,14 @@
 .section-container {
   margin: 120px 0 120px 0;
-  h2 {
-    font-size: 30px;
-    letter-spacing: 0.05em;
-  }
+  // h2 {
+  //   font-size: 30px;
+  //   letter-spacing: 0.05em;
+  // }
   @media (max-width:768px) {
     margin: 110px 0 110px 0;
+  }
+  @media (max-width: 415px) {
+    margin: 60px 0 60px 0;
   }
 
 }
@@ -21,10 +24,18 @@
     &--common {
       font-family: @main-text;
       color: @second-text-color;
+      font-size: 30px;
+      letter-spacing: 0.05em;
+      @media (max-width: 415px) {
+        font-size: 20px;
+      }
     }
     img {
       margin: auto;
       padding-right: 20px;
+      @media (max-width: 415px) {
+        width: 90px;
+      }
     }
   }
 }
@@ -57,6 +68,9 @@
   @media(max-width: 1024px) {
     padding: 20px 20px 20px 20px;
   }
+  @media (max-width: 415px) {
+    font-size: 14px;
+  }
 }
 
 
@@ -77,6 +91,9 @@
   @media(max-width: 1010px) {
     padding: 0 30px;
   }
+  @media (max-width: 415px) {
+    padding: 0 10px;
+  }
   &__img-wrap {
     padding-top: 30px;
     @media(max-width: 1010px) {
@@ -88,16 +105,25 @@
     @media(max-width: 1010px) {
       width: 200px;
     }
+    @media (max-width: 415px) {
+      width: 130px;
+    }
   }
   &__text-wrap {
     display: flex;
     flex-direction: column;
     padding: 0 30px;
+    @media (max-width: 415px) {
+      padding: 0 0 0 20px;
+    }
   }
   a {
     font-size: 14px;
     font-family: @second-text;
     color: @second-text-color;
+    @media (max-width: 415px) {
+      font-size: 10px;
+    }
   }
 }
 
@@ -113,6 +139,9 @@
   @media (max-width: 1024px) {
     font-size: 14px;
   }
+  @media (max-width: 415px) {
+    font-size: 12px;
+  }
 }
 
 .news__text {
@@ -123,6 +152,9 @@
 
   @media (max-width: 1024px) {
     font-size: 12px;
+  }
+  @media (max-width: 415px) {
+    font-size: 10px;
   }
 }
 
@@ -135,12 +167,17 @@
     display: flex;
     flex-direction: column;
     padding: 0 30px;
+    @media (max-width: 415px) {
+      padding: 0 10px;
+    }
   }
   &__img {
     width: 128px;
-    
     @media (max-width: 1024px) {
       width: 120px;
+    }
+    @media (max-width: 415px) {
+      width: 90px;
     }
   }
   &__footer {
@@ -152,6 +189,9 @@
     font-size: 14px;
     font-family: @second-text;
     color: @second-text-color;
+    @media (max-width: 415px) {
+      font-size: 10px;
+    }
   }
   time {
     padding-left: 12px;
@@ -170,6 +210,9 @@
     position: relative;
     @media(max-width: 1010px) {
       margin: 10px 0 10px 0;
+    }
+    @media (max-width: 415px) {
+      margin: 27px 0 10px 0;
     }
   }
 }
