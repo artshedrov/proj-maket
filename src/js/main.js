@@ -1,12 +1,14 @@
-window.onresize = function() {
-  if (window.innerWidth <= 760) {
+let smallRes = window.matchMedia('(max-width: 760px)');
+
+smallRes.addEventListener('change', (e) => {
+  if (e.matches) {
     projectSlider.params.slidesPerGroup = 1;
     projectSlider.params.slidesPerView = 1;
-  } else if (window.innerWidth > 760) {
+  } else {
     projectSlider.params.slidesPerGroup = 2;
     projectSlider.params.slidesPerView = 2;
   }
-}
+});
 
 let projectSlider = new Swiper('.project__slider', {
   slidesPerGroup: 2,
