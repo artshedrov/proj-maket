@@ -67,18 +67,27 @@
   @media (max-width: 825px) {
     padding: 10px;
   }
+  @media (max-width: 360px) {
+    padding: 5px;
+  }
   &__title {
     color: @second-text-color;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 1em;
     margin: 0;
+    @media (max-width: 360px) {
+      font-size: 12px;
+    }
   }
   &__text {
     color: @second-text-color;
     font-family: @second-text;
     font-size: 0.8em;
     margin: 0;
+    @media (max-width: 360px) {
+      font-size: 10px;
+    }
   }
 }
 

@@ -20,6 +20,7 @@
   &__img {
     position: relative;
     width: 100%;
+    height: 100% ;
 
   }
   &__desc {
@@ -38,6 +39,9 @@
     @media (max-width: 768px) {
       padding: 10px 0 10px 10px;
     }
+    @media (max-width: 360px) {
+      padding: 10px;
+    }
     
   }
   &__desc-title {
@@ -47,6 +51,7 @@
     letter-spacing: 0.05em;
     font-size: 18px;
     margin: 0;
+    position: relative;
 
     @media (max-width: 1047px) {
       font-size: 16px;
@@ -60,6 +65,9 @@
     }
     @media (max-width: 415px) {
       font-size: 14px;
+    }
+    @media (max-width: 360px) {
+      font-size: 9px;
     }
   }
   &__btn {
@@ -76,12 +84,18 @@
       background-color: white;
       color: @primary-blue;
       box-shadow: 0 8px 1px -5px @primary-blue;
+      @media (max-width: 360px) {
+        box-shadow: 0 7px 0px -6px @primary-blue;
+      }
     }
     &:hover {
       opacity: 0.6;
     }
     @media (max-width: 415px) {
       font-size: 16px;
+    }
+    @media (max-width: 360px) {
+      font-size: 12px;
     }
   } 
 }
