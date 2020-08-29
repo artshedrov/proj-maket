@@ -1,15 +1,3 @@
-let smallRes = window.matchMedia('(max-width: 760px)');
-
-smallRes.addEventListener('change', (e) => {
-  if (e.matches) {
-    projectSlider.params.slidesPerGroup = 1;
-    projectSlider.params.slidesPerView = 1;
-  } else {
-    projectSlider.params.slidesPerGroup = 2;
-    projectSlider.params.slidesPerView = 2;
-  }
-});
-
 let projectSlider = new Swiper('.project__slider', {
   slidesPerGroup: 2,
   slidesPerView: 2,
@@ -28,3 +16,17 @@ let arendaSlider = new Swiper ('.arenda-slider__wrapper', {
     prevEl: '.arenda-slider__btn--prev'
   }
 });
+
+function changeResolution(x) {
+  if (x.matches) {
+    projectSlider.params.slidesPerGroup = 1;
+    projectSlider.params.slidesPerView = 1;
+  } else {
+    projectSlider.params.slidesPerGroup = 2;
+    projectSlider.params.slidesPerView = 2;
+  }
+}
+
+let x = window.matchMedia('(max-width: 760px)');
+changeResolution(x);
+x.addListener(changeResolution);
